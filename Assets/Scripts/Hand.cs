@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,5 +15,15 @@ public class Hand : MonoBehaviour
     void Update()
     {
         
+    }
+
+    internal void setGrip(float v)
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void SetTrigger(float v)
+    {
+        throw new NotImplementedException();
     }
 }
