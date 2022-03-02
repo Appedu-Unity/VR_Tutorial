@@ -7,7 +7,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Handcounter : MonoBehaviour
 {
     ActionBasedController controller;
-    Hand hand;
+    
+    public Hand hand;
 
     // Start is called before the first frame update
     void Start()

@@ -6,14 +6,15 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Hand : MonoBehaviour
 {
-    private float speed;
+    public float speed;
+
     Animator animator;
     private float gripTarget;
     private float triggerTarget;
-    private float gripCurren;
-    private float triggerCurren;
-    private string animatorGripParm = "Grip";
-    private string animatorTriggerParm = "Trigger";
+    private float gripCurrent;
+    private float triggerCurrent;
+    private string animatorGripParam = "Grip";
+    private string animatorTriggerParam = "Trigger";
     // Start is called before the first frame update
     void Start()
     {
@@ -37,15 +38,15 @@ public class Hand : MonoBehaviour
     }
     void AnimateHand()
     {
-        if (gripCurren != gripTarget)
+        if (gripCurrent != gripTarget)
         {
-            gripCurren = Mathf.MoveTowards(gripCurren, gripTarget, Time.deltaTime * speed);
-            animator.SetFloat(animatorGripParm, gripCurren);
+            gripCurrent = Mathf.MoveTowards(gripCurrent, gripTarget, Time.deltaTime * speed);
+            animator.SetFloat(animatorGripParam, gripCurrent);
         }
-        if (triggerCurren != gripTarget)
+        if (triggerCurrent != gripTarget)
         {
-            triggerCurren = Mathf.MoveTowards(gripCurren, gripTarget, Time.deltaTime * speed);
-            animator.SetFloat(animatorTriggerParm, gripCurren);
+            triggerCurrent = Mathf.MoveTowards(triggerCurrent, triggerTarget, Time.deltaTime * speed);
+            animator.SetFloat(animatorTriggerParam, triggerCurrent);
         }
     }
 }

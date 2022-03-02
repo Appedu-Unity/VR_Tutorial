@@ -678,6 +678,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbf436af4b4d2854fb6edbbe9c432012, type: 3}
+--- !u!1 &674200256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8839891623415578560, guid: 4e0bf9679877c9f419b730118c62a55a, type: 3}
+  m_PrefabInstance: {fileID: 8839891624929590793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &674200257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674200256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6b39addb382984e85a5582ca7984b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 1191681381}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a381baa05b4e84da8e297790ea331b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &1284353274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,11 +1198,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a381baa05b4e84da8e297790ea331b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!4 &1632277662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8839891625154589697, guid: 4e0bf9679877c9f419b730118c62a55a, type: 3}
   m_PrefabInstance: {fileID: 8839891624929590793}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1798220585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8839891625154589710, guid: 4e0bf9679877c9f419b730118c62a55a, type: 3}
+  m_PrefabInstance: {fileID: 8839891624929590793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1798220586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798220585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6b39addb382984e85a5582ca7984b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 1505618274}
 --- !u!114 &1942338838 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8839891624162312991, guid: 4e0bf9679877c9f419b730118c62a55a, type: 3}
