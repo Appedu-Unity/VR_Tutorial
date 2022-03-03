@@ -9,6 +9,7 @@ public class Hand : MonoBehaviour
     public float speed;
 
     Animator animator;
+    SkinnedMeshRenderer mesh;   //圖像渲染
     private float gripTarget;
     private float triggerTarget;
     private float gripCurrent;
@@ -19,6 +20,7 @@ public class Hand : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        mesh = GetComponentInChildren<SkinnedMeshRenderer>();   //針對渲染作執行動作
     }
 
     // Update is called once per frame
@@ -48,5 +50,9 @@ public class Hand : MonoBehaviour
             triggerCurrent = Mathf.MoveTowards(triggerCurrent, triggerTarget, Time.deltaTime * speed);
             animator.SetFloat(animatorTriggerParam, triggerCurrent);
         }
+    }
+    public void ToggleVisibility()
+    {
+        mesh.enabled = !mesh.enabled;
     }
 }
