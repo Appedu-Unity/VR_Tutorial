@@ -31,9 +31,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
+  - m_ConditionMode: 4
     m_ConditionEvent: Trigger
-    m_EventTreshold: 0
+    m_EventTreshold: 0.01
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3280003410675538563}
   m_Solo: 0
@@ -162,7 +162,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Trigger
     m_StateMachine: {fileID: -1251134136365591177}
-    m_Mask: {fileID: 31900000, guid: 98326159a45a16f43bbe9c8d080e96a7, type: 2}
+    m_Mask: {fileID: 31900000, guid: 502354c00f7e8ba48bcf3571f491ed49, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -244,14 +244,22 @@ BlendTree:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blend Tree
-  m_Childs: []
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 75abae7ae93bb3e49813362e49b625c2, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Trigger
+    m_Mirror: 0
   m_BlendParameter: Trigger
   m_BlendParameterY: Trigger
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
-  m_BlendType: 0
+  m_BlendType: 4
 --- !u!1101 &4284108299037521012
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -262,7 +270,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Trigger
-    m_EventTreshold: 0
+    m_EventTreshold: 0.01
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1733666319438818796}
   m_Solo: 0
@@ -313,7 +321,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Trigger
+    m_ConditionEvent: Grip
     m_EventTreshold: 0.01
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -113674680120586015}
@@ -357,7 +365,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Trigger
+    m_ConditionEvent: Grip
     m_EventTreshold: 0.01
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6382410855547564255}

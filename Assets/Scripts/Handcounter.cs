@@ -19,7 +19,7 @@ public class Handcounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hand.setGrip(controller.selectAction.action.ReadValue<float>());
+        hand.SetGrip(controller.selectAction.action.ReadValue<float>());
         hand.SetTrigger(controller.selectAction.action.ReadValue<float>());
     }
 }

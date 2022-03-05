@@ -10,6 +10,7 @@ public class Hand : MonoBehaviour
 
     Animator animator;
     SkinnedMeshRenderer mesh;   //¹Ï¹³´è¬V
+
     private float gripTarget;
     private float triggerTarget;
     private float gripCurrent;
@@ -29,7 +30,7 @@ public class Hand : MonoBehaviour
         AnimateHand();
     }
 
-    internal void setGrip(float v)
+    internal void SetGrip(float v)
     {
         gripTarget = v;
     }
@@ -45,7 +46,7 @@ public class Hand : MonoBehaviour
             gripCurrent = Mathf.MoveTowards(gripCurrent, gripTarget, Time.deltaTime * speed);
             animator.SetFloat(animatorGripParam, gripCurrent);
         }
-        if (triggerCurrent != gripTarget)
+        if (triggerCurrent != triggerTarget)
         {
             triggerCurrent = Mathf.MoveTowards(triggerCurrent, triggerTarget, Time.deltaTime * speed);
             animator.SetFloat(animatorTriggerParam, triggerCurrent);
@@ -56,3 +57,4 @@ public class Hand : MonoBehaviour
         mesh.enabled = !mesh.enabled;
     }
 }
+ 
